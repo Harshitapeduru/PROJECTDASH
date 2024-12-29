@@ -1,21 +1,37 @@
 import React from 'react';
-import { Bar } from 'react-chartjs-2';
+import { Bar, Line } from 'react-chartjs-2';
+import {
+  Chart as ChartJS,
+  CategoryScale,
+  LinearScale,
+  BarElement,
+  Title,
+  Tooltip,
+  Legend,
+} from 'chart.js';
 
-const Chart = ({ data }) => {
-    if (!data.length) return <p>No data for chart</p>;
+ChartJS.register(
+  CategoryScale,
+  LinearScale,
+  BarElement,
+  Title,
+  Tooltip,
+  Legend
+);
 
-    const chartData = {
-        labels: data.map((row) => row.product || 'N/A'), // Use product as the label
-        datasets: [
-            {
-                label: 'Sales Chart',
-                data: data.map((row) => row.total || 0), // Use 'total' for sales data
-                backgroundColor: 'rgba(75,192,192,0.6)',
-            },
-        ],
-    };
-
-    return <Bar data={chartData} />;
+const data = {
+  labels: ['January', 'February', 'March', 'April', 'May', 'June'],
+  datasets: [
+    {
+      label: 'My Dataset',
+      data: [12, 19, 3, 5, 2, 3],
+      backgroundColor: 'rgba(75, 192, 192, 0.2)',
+      borderColor: 'rgba(75, 192, 192, 1)',
+      borderWidth: 1,
+    },
+  ],
 };
 
-export default Chart;
+export default function Chart() {
+  return <Bar data={data} />;
+}
