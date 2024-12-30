@@ -1,9 +1,9 @@
 id,product,category,quantity,price,total,date
-1,Laptop,Electronics,2,800,1600,2024-12-01
-2,Headphones,Electronics,5,50,250,2024-12-02
-3,Chair,Furniture,10,40,400,2024-12-03
-4,Notebook,Stationery,15,5,75,2024-12-04
-5,Smartphone,Electronics,3,600,1800,2024-12-05
-6,Table,Furniture,2,150,300,2024-12-06
-7,Pencil,Stationery,20,1,20,2024-12-07
-8,Monitor,Electronics,4,200,800,2024-12-08
+1,TV,Electronics,3,400,1200,2024-12-01
+2,Smartwatch,Electronics,5,150,750,2024-12-02
+3,Desk,Furniture,2,250,500,2024-12-03
+4,Chair,Furniture,4,80,320,2024-12-04
+5,Printer,Electronics,1,100,100,2024-12-05
+6,Bookshelf,Furniture,3,150,450,2024-12-06
+7,Headphones,Electronics,7,50,350,2024-12-07
+8,Table,Furniture,2,200,400,2024-12-08

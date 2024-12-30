@@ -1,0 +1,6 @@
+{
+    "column_names": ["id", "product", "category", "quantity", "price", "total", "date"],
+    "columns": 7,
+    "rows": 8
+  }
+  
